@@ -1,0 +1,31 @@
+---
+# The following script for the service type NodePort
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-service
+spec:
+  type: NodePort
+  selector:
+    type: backend
+  # The port which is specified here is the port of the service, the targetPort is the port on the service and nodePort is the port on the node where we can access the backend service
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 30008
+
+---
+# The following script for the service type ClusterIp
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-service
+spec:
+  type: ClusterIp
+  selector:
+    type: backend
+  ports:
+    - port: 80
+      targetPort: 80
