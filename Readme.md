@@ -1,4 +1,4 @@
-# Kubernetes Deployment, Service, Pod, and ReplicaSet Examples
+# Kubernetes
 
 This repository contains sample YAML scripts demonstrating the concepts of Deployments, Services, Pods, and ReplicaSets in Kubernetes.
 
