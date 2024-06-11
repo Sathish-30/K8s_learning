@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: backend-server
+  labels:
+    type: backend
+spec:
+  containers:
+    - name: backend-container
+      image: golang-backend:1.0.1
